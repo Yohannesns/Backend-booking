@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :bookings
+  resources :site_hotels
+  resources :hotels
+  resources :sites
+  
+  resources :sites do  
+    resources :site_hotels do  
+      resources :bookings  
+    end  
+ end
+ 
 end

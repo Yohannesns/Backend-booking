@@ -1,0 +1,12 @@
+
+
+<%= month_calendar hotels: @bookings do |date, bookings| %>  
+    <%= date %>  
+  
+    <% bookings.each do |booking| %>  
+      <div>  
+        <%= booking.start_time %>  
+      </div>  
+    <% end %>  
+  
+  <% end %>

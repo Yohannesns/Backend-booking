@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hotel:</strong>
+  <%= @site_hotel.hotel.name %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @site_hotel.site.name %>
+</p>
+
+<%= link_to 'Edit', edit_site_hotel_path(@site_hotel) %> |
+<%= link_to 'Back', site_hotels_path %>

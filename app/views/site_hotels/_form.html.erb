@@ -1,0 +1,8 @@
+
+
+<%= simple_form_for(@site_hotel) do |f| %>  
+  <%= render 'errors' %>  
+  <%= f.association :site %>  
+  <%= f.association :hotel %>  
+  <%= f.submit 'Submit' %>  
+<% end %>
